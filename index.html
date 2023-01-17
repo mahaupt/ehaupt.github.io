@@ -32,30 +32,29 @@
         width: 100%;
         height: 100%;
         z-index: -20;
-        background: url(./res/img/bg2.jpg) no-repeat center;
-        background-size: cover;
-        filter: brightness(1.6) contrast(0.5);
+        background-image: linear-gradient(100deg, #363738, #161819);
       }
 
 
       #background-me {
         height: 100%;
-        width: 300px;
+        width: 900px;
         z-index: -10;
         position:absolute;
-        background: url(./res/img/me_tx.png) no-repeat right top;
+        background: url(./res/img/hero.png) no-repeat right top;
         background-size: contain;
         right: 0;
-        top: 100px;
+        top: 0px;
       }
       @media only screen and (max-width: 992px) {
         #background-me {
-          top: 75px;
+          top: 0px;
+          filter: brightness(0.5) contrast(0.7);
         }
       }
       @media only screen and (max-width: 576px) {
         #background-me {
-          filter: brightness(1.6) contrast(0.5);
+          filter: brightness(0.3) contrast(0.8);
         }
       }
 
@@ -91,7 +90,7 @@
         background-color: white;
       }
       .txt-shadow {
-        text-shadow: 0px 0px 20px #fff;
+        text-shadow: 0px 0px 3px #000;
       }
       .footer {
         background-color: #02020278;
@@ -129,26 +128,26 @@
   <div class="rellax" id="background-me"></div>
 
 	<div class="container-md">
-		<h2 class="mt-2 txt-shadow" id="social-links">
-			<a href="https://www.facebook.com/marcel.haupt1" class="text-dark"><i class="fab fa-facebook-square"></i></a>
-			<a href="https://www.linkedin.com/in/marcel-haupt-bb593a163/" class="text-dark"><i class="fab fa-linkedin"></i></a>
-			<a href="https://www.instagram.com/marcelthepilot/" class="text-dark"><i class="fab fa-instagram-square"></i></a>
-			<a href="https://github.com/mahaupt" class="text-dark"><i class="fab fa-github-square"></i></a>
+		<h2 class="mt-2" id="social-links">
+			<a href="https://www.facebook.com/marcel.haupt1" class="text-secondary shadow-sm"><i class="fab fa-facebook-square"></i></a>
+			<a href="https://www.linkedin.com/in/marcel-haupt-bb593a163/" class="text-secondary shadow-sm"><i class="fab fa-linkedin"></i></a>
+			<a href="https://www.instagram.com/marcelthepilot/" class="text-secondary shadow-sm"><i class="fab fa-instagram-square"></i></a>
+			<a href="https://github.com/mahaupt" class="text-secondary shadow-sm"><i class="fab fa-github-square"></i></a>
 		</h2>
 	</div>
 
   <div class="spacer"></div>
 
 	<main role="main">
-		<div class="container-md">
+		<div class="container-md text-white">
     		<div class="row pb-5 pt-3">
         		<div class="col-sm-9 col-lg-8">
         			<h1 class="h2 mt-4 txt-shadow">Expert Web App Solutions for Your Business Needs</h1>
-        			<p class="text-dark txt-shadow" style="font-size:1.1em;">
+        			<p class="txt-shadow" style="font-size:1.1em;">
                 <b>Discover the Future of Web Technology with Marcel Haupt and Team - Over a Decade of Experience in Software and Systems Engineering.</b>
                 Specializing in creating beautiful and modern apps for the web, we strive to enhance your online experience through cutting-edge solutions and user-friendly designs. Trust in our team of experts to bring your business to the next level and stay ahead of the competition.
               </p>
-              <p><a href="#services" class="btn btn-dark"><i class="fas fa-arrow-down"></i> Find out what we do</a></p>
+              <p><a href="#services" class="btn btn-secondary shadow"><i class="fas fa-arrow-down"></i> Find out what we do</a></p>
             </div>
     		</div>
 
@@ -156,9 +155,6 @@
 	</main>
 
   <div class="spacer"></div>
-
-<div class="bg-color-start">
-</div>
 <div class="bg-color">
 <br>
 
@@ -487,11 +483,15 @@
         </div>
       </div>
     </div>
+    
+    <div class="row">
+      <div class="col-12 text-center">
+        <img src="./res/img/server.png" alt="server" style="max-height: 500px"/>
+      </div>
+    </div>
 
-    <div class="spacer"></div>
 
-
-    <div class="container-md mt-5 pt-5">
+    <div class="container-md">
       <div class="row justify-content-center">
         <div class="col-12 text-center footer">
           <small>This website does not collect personal data and is not using cookies. Links might lead to external pages. Created By: <span id="insert-author">JS Insert</span></small>
